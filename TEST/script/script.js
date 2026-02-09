@@ -1,16 +1,16 @@
 console.log("Assalamu alaykum world!");
 
-//Покраска первой карточки
+ // Покраска первой карточки
 
-const firstCardRecolorBtn=document.getElementById("recolor-first-card-button");
+const firstCardRecolorBtn = document.getElementById("recolor-first-card-button");
 const firstCard = document.querySelector('.product-card');
-const blueHashcolor='#0000ff';
+const blueHashcolor = '#0000ff';
 
-firstCardRecolorBtn.addEventListener('click',() => {
+firstCardRecolorBtn.addEventListener('click', () => {
     firstCard.style.backgroundColor = blueHashcolor;
 });
 
-//Покраска всех карточек
+ // Покраска всех карточек
 
 const allCardsRecolorBtn = document.getElementById("recolor-all-cards-button");
 const allCards = document.querySelectorAll('.product-card');
@@ -22,23 +22,23 @@ allCardsRecolorBtn.addEventListener('click', () => {
     });
 });
 
-//Переход на страницу Googl
+ // Переход на страницу Googl
 
-const googleOpenBtn=document.getElementById("open-google-button");
+const googleOpenBtn = document.getElementById("open-google-button");
 
 googleOpenBtn.addEventListener('click',openGoogle);
 
 function openGoogle() {
-    const answer=confirm('Вы дейтcвительно хотите перейти на сайт Google?');
+    const answer = confirm('Вы дейтcвительно хотите перейти на сайт Google?');
 
-    if (answer===true) {
+    if (answer) {
         window.open('https://google.com');
     } else {
         console.log('Пользователь отменил переход на Google');
     }
-}
+};
 
-//Кнопка при нажатии на которую меняется цвет заголовка с одного на другой
+ // Кнопка при нажатии на которую меняется цвет заголовка с одного на другой
 
 const mainHeadingRecolorBtn = document.getElementById('recolor-main-heading-button');
 const productSelectionTitle = document.querySelector('.product-selection_title');
@@ -49,7 +49,7 @@ mainHeadingRecolorBtn.onclick = function() {
 };
 
 if (productSelectionTitle) {
-    productSelectionTitle.addEventListener('mouseenter', () => {
+    productSelectionTitle.addEventListener('mouseover', () => {
         const headerText = productSelectionTitle.textContent;
         
         console.log("Выводится текст заголовка : " + headerText);
