@@ -8,7 +8,7 @@ body {
 }
 
 .background-picture {
-    background-image: url("../images/background-dandelion.png");
+    background-image: url("../img/background-dandelion.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
